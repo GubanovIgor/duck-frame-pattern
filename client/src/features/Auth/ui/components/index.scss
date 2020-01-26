@@ -1,0 +1,56 @@
+.AuthPage {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f6f6f6;
+}
+
+.AuthForm {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__wrapper {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		background: #fff;
+		padding: 30px;
+		height: 100vh;
+		border-radius: 10px;
+		@media only screen and (min-width: 576px) {
+			width: 500px;
+			box-shadow: 0 9px 25px 0 rgba(0,0,0,.13);
+			height: 445px;
+		}
+		@media only screen and (min-width: 1024px) {
+			width: 700px;
+		}
+	}
+	&__image-block {
+		display: none;
+		background-size: contain;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-image: url("../../assets/images/dino_ride.svg");
+		background-repeat: no-repeat;
+		@media only screen and (min-width: 576px) {
+			display: block;
+		}
+		@media only screen and (min-width: 1024px) {
+			background-image: url("../../assets/images/dino_work.svg");
+			width: 350px;
+			height: 350px;
+			margin-right: 30px;
+		}
+	}
+	&__form-block {
+		width: 90vw;
+		@media only screen and (min-width: 576px) {
+			width: 300px;
+		}
+  }
+  
+}

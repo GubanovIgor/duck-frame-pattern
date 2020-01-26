@@ -1,0 +1,11 @@
+extends:
+  - stylelint-config-css-modules
+  - stylelint-config-recommended
+ignoreFiles:
+  - '**/*.tsx'
+rules:
+  no-descending-specificity: null
+  declaration-colon-newline-after: null
+  value-list-comma-newline-after: null
+  comment-no-empty: true
+  selector-nested-pattern: '^&:'

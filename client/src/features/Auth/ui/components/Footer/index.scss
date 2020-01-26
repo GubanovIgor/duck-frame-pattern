@@ -1,0 +1,11 @@
+.AuthForm-footer {
+  margin-top: 20px;
+  &__bold {
+		font-weight: bold;
+		display: inline-block;
+		margin-left: 15px;
+		&:hover {
+			cursor: pointer;
+		}
+  }
+}

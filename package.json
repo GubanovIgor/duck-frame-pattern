@@ -1,0 +1,35 @@
+{
+  "name": "admin-panel-for-banners",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Александр Катров",
+      "email": "a.katrov@yandex.ru",
+      "url": "https://github.com/katrov"
+    },
+    {
+      "name": "Губанов Игорь",
+      "email": "applecake@inbox.ru",
+      "url": "https://github.com/GubanovIgor"
+    },
+    {
+      "name": "Татьяна кудашева",
+      "email": "nalerou@gmail.com",
+      "url": "https://github.com/alietta"
+    }
+  ],
+  "scripts": {
+    "client": "cd client; yarn run start",
+    "server": "cd server; yarn run start",
+    "start": "concurrently \"yarn run server\" \"yarn run client\"",
+    "installserver": "cd client; yarn install",
+    "installclient": "cd server; yarn install",
+    "installing": "concurrently \"yarn run installserver\" \"yarn run installclient\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}

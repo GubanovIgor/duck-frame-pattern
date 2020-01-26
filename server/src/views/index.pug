@@ -1,0 +1,8 @@
+extends base
+
+block content
+  main
+    h2= hello
+    form(action="/q", method="post")
+      input#email(type="email", name="email")
+      button(type="submit") отправить
